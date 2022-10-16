@@ -1,0 +1,106 @@
+.wc__header {
+    background: url(../../assets/Background.jpg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    margin: 4rem  ;
+    text-align: center;
+    border-radius: 70px;
+    padding: 2rem;
+    height:40vh;
+}
+
+.wc__header h1 {
+    font-family:var(--font-family) ;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.wc__header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+    border: solid 2px #000;
+    padding: 3rem;
+    margin: 2rem 8rem;
+    border-radius: 50px;
+    position: relative;
+    top: -300px;
+}
+
+.wc__header-container_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: var(--font-family);
+    padding: 2rem;
+    width: 400px;
+    margin: 0;
+}
+.wc__header-container_content h1 {
+    color: #000;
+}
+
+.wc__header-container_cards {
+    /* display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(20%,1fr);
+    overflow-x:scroll;
+    scroll-behavior: smooth;
+    gap: 2rem; */
+    /* width: 284.906px; */
+    width: 100%
+}
+
+/* .wc__header-container_cards img {
+    width: 200px;
+} */
+
+
+
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+.slide img {
+  width: 15rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.2);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.activeSlide {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+.arrow {
+  background-color: #000;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.arrow svg {
+  transition: color 300ms;
+}
+
+.arrow svg:hover {
+  color: #68edff;
+}
+
+.next {
+  right: 0%;
+  top: 20%;
+}
+
+.prev {
+  left: 0%;
+  top: 20%;
+}
